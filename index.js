@@ -60,15 +60,11 @@ client.on("messageCreate", async (message) => {
                 if (imageUrl) {
                     const imagePath = await downloadImage(imageUrl);
                     if (imagePath) {
-                        message.reply(config.replyMessage).then(() => {
-                            message.channel.send({ files: [imagePath] }).then(() => {
-                                console.log(`Sent image successfully in channel: ${message.channel.name}`);
-                                fs.remove(imagePath); // Clean up after sending
-                            }).catch(err => {
-                                console.error(`Error sending image: ${err.message}`);
-                            });
+                        message.channel.send({ files: [imagePath] }).then(() => {
+                            console.log(`Sent image successfully in channel: ${message.channel.name}`);
+                            fs.remove(imagePath); // Clean up after sending
                         }).catch(err => {
-                            console.error(`Error sending reply: ${err.message}`);
+                            console.error(`Error sending image: ${err.message}`);
                         });
                     } else {
                         console.error("Error: Image path is null or undefined");
