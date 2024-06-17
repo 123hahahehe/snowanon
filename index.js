@@ -28,16 +28,14 @@ const prefixConfigs = {
         searchQuery: "snow leopard"
     },
     "!anon": {
-        prefixes: ["anon", "anonymous", "hacker", "hack", "larp", "hacking", "stealing", "larper", "larping", "skid", "script kiddie", "code", "b4b", "dodge", "dodging", "scared", "im ctfu", "Im ctfu😂😂", "noobdog", "faggot", "nigger", "dodging", "larper caught", "oh aii",],
+        prefixes: ["anon", "anonymous", "hacker", "hack", "larp", "hacking", "stealing", "larper", "larping", "skid", "script kiddie", "code", "b4b", "dodge", "dodging", "scared", "im ctfu", "Im ctfu😂😂", "noobdog", "faggot", "nigger", "dodging", "larper caught", "oh aii"],
         searchQuery: "anonymous middle finger"
     },
-    // Add more prefix configurations as needed
- },
     "!datura": {
         prefixes: ["daturahill", "imar gaspar", "chess", "checkers", "tate", "cuck"],
         searchQuery: "ugly indian with unibrow"
-    },
-
+    }
+    // Add more prefix configurations as needed
 };
 
 client.on("ready", () => {
@@ -137,6 +135,7 @@ async function downloadImage(url) {
         return null;
     }
 }
+
 const http = require('http');
 
 const server = http.createServer((req, res) => {
