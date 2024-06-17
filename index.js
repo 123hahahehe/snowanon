@@ -33,7 +33,7 @@ const prefixConfigs = {
     },
     "!datura": {
         prefixes: ["daturahill", "imar gaspar", "chess", "checkers", "tate", "cuck", "soundcloud.com/imar-gaspar"],
-        searchQuery: "ugly indian with unibrow"
+        searchQuery: "unibrow man anthony davis"
     }
     // Add more prefix configurations as needed
 };
