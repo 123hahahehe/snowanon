@@ -32,6 +32,11 @@ const prefixConfigs = {
         searchQuery: "anonymous middle finger"
     },
     // Add more prefix configurations as needed
+ },
+    "!anon": {
+        prefixes: ["daturahill", "imar gaspar", "chess", "checkers", "tate", "cuck"],
+        searchQuery: "ugly indian with unibrow"
+    },
 };
 
 client.on("ready", () => {
