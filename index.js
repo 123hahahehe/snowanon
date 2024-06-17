@@ -33,10 +33,11 @@ const prefixConfigs = {
     },
     // Add more prefix configurations as needed
  },
-    "!anon": {
+    "!datura": {
         prefixes: ["daturahill", "imar gaspar", "chess", "checkers", "tate", "cuck"],
         searchQuery: "ugly indian with unibrow"
     },
+
 };
 
 client.on("ready", () => {
