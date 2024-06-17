@@ -25,18 +25,15 @@ const filename = "mellanspel_on_ig.gif";
 const prefixConfigs = {
     "!snow": {
         prefixes: ["snow", "leopard", "snow leopard", "winter", "cold", "mountains", "snowy", "blizzard", "frost", "ice", "freezing", "glacier", "hibernate", "alpine", "white fur", "big cat", "stealthy", "camouflage", "high altitude", "endangered", "wildlife", "nature", "conservation", "snowfall", "christmas", "holiday", "festive", "icy", "snowstorm", "snowflake", "snowman", "sleigh", "reindeer", "polar", "arctic", "sub-zero", "winter wonderland", "frostbite", "snowball", "frozen"],
-        searchQuery: "snow leopard",
-        replyMessage: "Here's a cool snow leopard for you!"
+        searchQuery: "snow leopard"
     },
     "!anon": {
         prefixes: ["anon", "anonymous", "hacker", "hack", "larp", "hacking", "stealing", "larper", "larping", "skid", "script kiddie", "code", "b4b", "dodge", "dodging", "scared", "im ctfu", "Im ctfu😂😂", "noobdog", "faggot", "nigger", "dodging", "larper caught", "oh aii"],
-        searchQuery: "anonymous middle finger",
-        replyMessage: "Anonymous sends their regards!"
+        searchQuery: "anonymous middle finger"
     },
     "!datura": {
         prefixes: ["daturahill", "imar gaspar", "chess", "checkers", "tate", "cuck", "soundcloud.com/imar-gaspar", "sigma", "rizz", "kai cenat", "skibidi", "rizzler", "lumi athena", "akoge", "com", "doxbin"],
-        searchQuery: "unibrow man anthony davis",
-        replyMessage: "Check out this unibrow legend!"
+        searchQuery: "unibrow man anthony davis"
     }
     // Add more prefix configurations as needed
 };
