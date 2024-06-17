@@ -25,15 +25,18 @@ const filename = "mellanspel_on_ig.gif";
 const prefixConfigs = {
     "!snow": {
         prefixes: ["snow", "leopard", "snow leopard", "winter", "cold", "mountains", "snowy", "blizzard", "frost", "ice", "freezing", "glacier", "hibernate", "alpine", "white fur", "big cat", "stealthy", "camouflage", "high altitude", "endangered", "wildlife", "nature", "conservation", "snowfall", "christmas", "holiday", "festive", "icy", "snowstorm", "snowflake", "snowman", "sleigh", "reindeer", "polar", "arctic", "sub-zero", "winter wonderland", "frostbite", "snowball", "frozen"],
-        searchQuery: "snow leopard"
+        searchQuery: "snow leopard",
+        replyMessage: "Here's a cool snow leopard for you!"
     },
     "!anon": {
         prefixes: ["anon", "anonymous", "hacker", "hack", "larp", "hacking", "stealing", "larper", "larping", "skid", "script kiddie", "code", "b4b", "dodge", "dodging", "scared", "im ctfu", "Im ctfu😂😂", "noobdog", "faggot", "nigger", "dodging", "larper caught", "oh aii"],
-        searchQuery: "anonymous middle finger"
+        searchQuery: "anonymous middle finger",
+        replyMessage: "Anonymous sends their regards!"
     },
     "!datura": {
         prefixes: ["daturahill", "imar gaspar", "chess", "checkers", "tate", "cuck", "soundcloud.com/imar-gaspar", "sigma", "rizz", "kai cenat", "skibidi", "rizzler", "lumi athena", "akoge", "com", "doxbin"],
-        searchQuery: "unibrow man anthony davis"
+        searchQuery: "unibrow man anthony davis",
+        replyMessage: "Check out this unibrow legend!"
     }
     // Add more prefix configurations as needed
 };
@@ -57,11 +60,15 @@ client.on("messageCreate", async (message) => {
                 if (imageUrl) {
                     const imagePath = await downloadImage(imageUrl);
                     if (imagePath) {
-                        message.channel.send({ files: [imagePath] }).then(() => {
-                            console.log(`Sent image successfully in channel: ${message.channel.name}`);
-                            fs.remove(imagePath); // Clean up after sending
+                        message.reply(config.replyMessage).then(() => {
+                            message.channel.send({ files: [imagePath] }).then(() => {
+                                console.log(`Sent image successfully in channel: ${message.channel.name}`);
+                                fs.remove(imagePath); // Clean up after sending
+                            }).catch(err => {
+                                console.error(`Error sending image: ${err.message}`);
+                            });
                         }).catch(err => {
-                            console.error(`Error sending image: ${err.message}`);
+                            console.error(`Error sending reply: ${err.message}`);
                         });
                     } else {
                         console.error("Error: Image path is null or undefined");
