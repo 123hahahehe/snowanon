@@ -32,7 +32,7 @@ const prefixConfigs = {
         searchQuery: "anonymous middle finger"
     },
     "!datura": {
-        prefixes: ["daturahill", "imar gaspar", "chess", "checkers", "tate", "cuck"],
+        prefixes: ["daturahill", "imar gaspar", "chess", "checkers", "tate", "cuck", "soundcloud.com/imar-gaspar"],
         searchQuery: "ugly indian with unibrow"
     }
     // Add more prefix configurations as needed
