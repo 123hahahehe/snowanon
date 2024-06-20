@@ -24,12 +24,12 @@ const filename = "mellanspel_on_ig.gif";
 // Configurations for different prefixes
 const prefixConfigs = {
     "!snow": {
-        prefixes: ["snow", "leopard", "snow leopard", "winter", "cold", "mountains", "snowy", "blizzard", "frost", "ice", "freezing", "glacier", "hibernate", "alpine", "white fur", "big cat", "stealthy", "camouflage", "high altitude", "endangered", "wildlife", "nature", "conservation", "snowfall", "christmas", "holiday", "festive", "icy", "snowstorm", "snowflake", "snowman", "sleigh", "reindeer", "polar", "arctic", "sub-zero", "winter wonderland", "frostbite", "snowball", "frozen"],
-        searchQuery: "snow leopard"
+        prefixes: ["i feel so alone", "genshin", "rust", "fortnite", "sigilkore"],
+        searchQuery: "joe biden kissing kid"
     },
     "!anon": {
         prefixes: ["anon", "anonymous", "hacker", "hack", "larp", "hacking", "stealing", "larper", "larping", "skid", "script kiddie", "code", "b4b", "dodge", "dodging", "scared", "im ctfu", "Im ctfu😂😂", "noobdog", "faggot", "nigger", "dodging", "larper caught", "oh aii"],
-        searchQuery: "anonymous middle finger"
+        searchQuery: "anonymous mask middle finger"
     },
     "!datura": {
         prefixes: ["daturahill", "imar gaspar", "chess", "checkers", "tate", "cuck", "imar-gaspar", "sigma", "rizz", "kai cenat", "skibidi", "rizzler", "lumi athena", "akoge", "indian", "doxbin"],
