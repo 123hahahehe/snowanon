@@ -26,7 +26,7 @@ const prefixConfigs = {
         searchQuery: "anonymous mask middle finger"
     },
     "!datura": {
-        prefixes: ["daturahill", "imar gaspar", "chess", "checkers", "tate", "cuck", "imar-gaspar", "sigma", "rizz", "kai cenat", "skibidi", "rizzler", "lumi athena", "akoge", "indian", "doxbin"],
+        prefixes: ["daturahill", "imar gaspar", "chess", "checkers", "andrew tate", "cuck", "imar-gaspar", "sigma", "rizz", "kai cenat", "skibidi", "rizzler", "lumi athena", "akoge", "indian", "doxbin"],
         searchQuery: "unibrow man anthony davis"
     }
 };
