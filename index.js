@@ -19,10 +19,10 @@ const filename = "mellanspel_on_ig.gif";
 const prefixConfigs = {
     "!snow": {
         prefixes: ["i feel so alone", "genshin", "rust", "fortnite", "sigilkore"],
-        searchQuery: "joe biden kissing kid"
+        searchQuery: "joe biden kissing"
     },
     "!anon": {
-        prefixes: ["anon", "anonymous", "hacker", "hack", "larp", "hacking", "stealing", "larper", "larping", "skid", "script kiddie", "code", "b4b", "dodge", "dodging", "scared", "im ctfu", "Im ctfu😂😂", "noobdog", "faggot", "nigger", "dodging", "larper caught", "oh aii"],
+        prefixes: ["anon", "anonymous", "hacker", "hack", "larp", "hacking", "stealing", "larper", "larping", "skid", "script kiddie", "code", "b4b", "dodge", "dodging", "im ctfu", "Im ctfu😂😂", "noobdog", "faggot", "nigger", "dodging", "larper caught", "oh aii"],
         searchQuery: "anonymous mask middle finger"
     },
     "!datura": {
