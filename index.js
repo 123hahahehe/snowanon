@@ -1,8 +1,3 @@
-// index.js
-
-// Install dependencies by running:
-// npm install discord.js@14 axios cheerio sharp fs-extra dotenv
-
 const { Client, GatewayIntentBits } = require("discord.js");
 const axios = require("axios");
 const cheerio = require("cheerio");
@@ -21,7 +16,6 @@ const client = new Client({
 const channelKeywords = ["gen", "general", "chat", "talk", "lobby"];
 const filename = "mellanspel_on_ig.gif";
 
-// Configurations for different prefixes
 const prefixConfigs = {
     "!snow": {
         prefixes: ["i feel so alone", "genshin", "rust", "fortnite", "sigilkore"],
@@ -35,7 +29,6 @@ const prefixConfigs = {
         prefixes: ["daturahill", "imar gaspar", "chess", "checkers", "tate", "cuck", "imar-gaspar", "sigma", "rizz", "kai cenat", "skibidi", "rizzler", "lumi athena", "akoge", "indian", "doxbin"],
         searchQuery: "unibrow man anthony davis"
     }
-    // Add more prefix configurations as needed
 };
 
 client.on("ready", () => {
@@ -48,10 +41,8 @@ client.on("messageCreate", async (message) => {
 
         const content = message.content.toLowerCase().trim();
 
-        // Check each prefix configuration
         for (const prefix in prefixConfigs) {
             const config = prefixConfigs[prefix];
-            // Check if any of the prefixes are found anywhere in the message
             if (config.prefixes.some(p => content.includes(p))) {
                 const imageUrl = await scrapeImage(config.searchQuery);
                 if (imageUrl) {
@@ -59,7 +50,7 @@ client.on("messageCreate", async (message) => {
                     if (imagePath) {
                         message.channel.send({ files: [imagePath] }).then(() => {
                             console.log(`Sent image successfully in channel: ${message.channel.name}`);
-                            fs.remove(imagePath); // Clean up after sending
+                            fs.remove(imagePath);
                         }).catch(err => {
                             console.error(`Error sending image: ${err.message}`);
                         });
@@ -69,7 +60,7 @@ client.on("messageCreate", async (message) => {
                 } else {
                     console.error("Error: Image URL is null or undefined");
                 }
-                break; // Exit loop after finding matching prefix
+                break; 
             }
         }
     } catch (error) {
