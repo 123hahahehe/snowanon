@@ -22,7 +22,7 @@ const prefixConfigs = {
         searchQuery: "i pedophile"
     },
     "!anon": {
-        prefixes: ["anon", "anonymous", "hacker", "hack", "larp", "hacking", "stealing", "larper", "larping", "skid", "script kiddie", "code", "b4b", "dodge", "dodging", "im ctfu", "Im ctfu😂😂", "noobdog", "dodging", "larper caught", "oh aii"],
+        prefixes: ["anon", "anonymous", "larp", "hacking", "stealing", "larper", "larping", "skid", "script kiddie", "code", "b4b", "dodge", "dodging", "im ctfu", "Im ctfu😂😂", "noobdog", "dodging", "larper caught", "oh aii"],
         searchQuery: "anonymous mask middle finger"
     },
     "!datura": {
